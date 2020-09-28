@@ -76,7 +76,8 @@ class _NewLoginState extends State<NewLogin> {
               Container(
                 margin: const EdgeInsets.only(top: 20, bottom: 0.0),
                 padding: EdgeInsets.all(10.0),
-                width: double.infinity,
+               // width: double.infinity,
+                width: MediaQuery.of(context).size. width;
                 child: TextField(
                   keyboardType: TextInputType.emailAddress,
                   textAlign: TextAlign.center,
@@ -102,7 +103,9 @@ class _NewLoginState extends State<NewLogin> {
               Container(
                 margin: const EdgeInsets.only(top: 10, bottom: 0.0),
                 padding: EdgeInsets.all(10.0),
-                width: double.infinity,
+              //  width: double.infinity,
+                width: MediaQuery.of(context).size.width;
+                //change this to screen width 
                 child: TextField(
                   keyboardType: TextInputType.emailAddress,
                   textAlign: TextAlign.center,
@@ -118,7 +121,10 @@ class _NewLoginState extends State<NewLogin> {
                     ),
                     filled: true,
                     fillColor: Colors.white,
-                    prefixIcon: Icon(Icons.email),
+                    prefixIcon: Icon(Icons.lock),
+                    // icon should be lock eg for password
+                    //enable obsecure text property
+                   
                     hintText: "Enter your Email",
                     hintStyle: TextStyle(
                         fontWeight: FontWeight.w700, color: Colors.black),
@@ -135,6 +141,7 @@ class _NewLoginState extends State<NewLogin> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text("Create"),
+                  //is it login page or create account?
                 ),
               )
             ],
