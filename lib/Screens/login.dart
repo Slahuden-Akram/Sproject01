@@ -105,7 +105,7 @@ class _NewLoginState extends State<NewLogin> {
                   padding: EdgeInsets.all(10.0),
                   width: double.infinity,
                   child: TextField(
-                    keyboardType: TextInputType.emailAddress,
+                    keyboardType: TextInputType.number,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.w700),
@@ -131,7 +131,7 @@ class _NewLoginState extends State<NewLogin> {
                   padding: EdgeInsets.all(10.0),
                   width: double.infinity,
                   child: TextField(
-                    keyboardType: TextInputType.emailAddress,
+                    keyboardType: TextInputType.text,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.w700),
