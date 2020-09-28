@@ -119,8 +119,34 @@ class _NewLoginState extends State<NewLogin> {
                       ),
                       filled: true,
                       fillColor: Colors.white,
-                      prefixIcon: Icon(Icons.email),
-                      hintText: "Enter your Email",
+                      prefixIcon: Icon(Icons.phone),
+                      hintText: "Enter your Phone Number",
+                      hintStyle: TextStyle(
+                          fontWeight: FontWeight.w700, color: Colors.black),
+                    ),
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(top: 10, bottom: 0.0),
+                  padding: EdgeInsets.all(10.0),
+                  width: double.infinity,
+                  child: TextField(
+                    keyboardType: TextInputType.emailAddress,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.w700),
+                    cursorColor: Colors.black,
+                    maxLength: 30,
+                    decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(20.0),
+                        ),
+                      ),
+                      filled: true,
+                      fillColor: Colors.white,
+                      prefixIcon: Icon(Icons.fiber_pin),
+                      hintText: "Enter your Password",
                       hintStyle: TextStyle(
                           fontWeight: FontWeight.w700, color: Colors.black),
                     ),
