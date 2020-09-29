@@ -9,7 +9,12 @@ class CreateAccount extends StatefulWidget {
 class _CreateAccountState extends State<CreateAccount> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+     body: Builder(
+        builder: (scaffold_context) =>Column(
+          //todo: code from here
+        )),
+    );
     //
   }
 }

@@ -1,3 +1,4 @@
+import 'package:Sproject01/Screens/createaccountscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'forgotpasswordscreen.dart';
@@ -209,8 +210,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)),
                         onPressed: () {
-//                          Navigator.push(context,
-//                              MaterialPageRoute(builder: (context)=>SignupScreen()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context)=>CreateAccount()));
                         },
                         color:Colors.transparent,
                         child: Text(
