@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:Sproject01/Screens/loginscreen.dart';
 import 'package:flutter/material.dart';
 import 'Screens/signUp.dart';
 
@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter',
+        title: 'Task planner',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: MyHomePage());
+        home: LoginScreen());
   }
 }

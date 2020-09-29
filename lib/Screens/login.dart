@@ -78,7 +78,9 @@ class _NewLoginState extends State<NewLogin> {
                   margin: const EdgeInsets.only(top: 20, bottom: 0.0),
                   padding: EdgeInsets.all(10.0),
                   width: double.infinity,
-                  child: TextField(
+                  child:
+
+                  TextField(
                     keyboardType: TextInputType.emailAddress,
                     textAlign: TextAlign.center,
                     style: TextStyle(
