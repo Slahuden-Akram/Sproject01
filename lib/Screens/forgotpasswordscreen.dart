@@ -45,7 +45,7 @@ class ForgotPassword extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Text("Enter your email for verification?",
+              Text("Enter your email for password reset",
                 style: TextStyle(
                     fontSize: 15
                 ),
@@ -89,7 +89,7 @@ class ForgotPassword extends StatelessWidget {
                       filled: true,
                       fillColor: Color.fromRGBO(150, 150, 150, 100.0),
                       prefixIcon: Icon(
-                        Icons.phonelink_lock,
+                        Icons.lock_outline,
                         color: Colors.black,
                       ),
                       hintText: 'Enter your email',
@@ -102,31 +102,28 @@ class ForgotPassword extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  ButtonTheme(
-                    minWidth: 120.0,
-                    height: 50.0,
+              ButtonTheme(
+                minWidth: MediaQuery.of(context).size.width,
+                height: 50.0,
 
-                    child: FlatButton(
-                        splashColor: Colors.white70,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30.0),
+                child: FlatButton(
+                    splashColor: Colors.white70,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30.0),
 
-                            side:
-                            BorderSide(color: Colors.white, width: 0)),
-                        padding: const EdgeInsets.all(15),
-                        color:  Colors.blueAccent,
-                        child:
-                        Text(
-                          "Send",style: TextStyle(
-                            fontSize: 18
-                        ),
-                        ),
-                        //On Pressed
-                        onPressed: () {
-                          //todo: auth to be created as global veriable
+                        side:
+                        BorderSide(color: Colors.white, width: 0)),
+                    padding: const EdgeInsets.all(15),
+                    color:  Colors.blueAccent,
+                    child:
+                    Text(
+                      "Send",style: TextStyle(
+                        fontSize: 18
+                    ),
+                    ),
+                    //On Pressed
+                    onPressed: () {
+                      //todo: auth to be created as global veriable
 //                          print(_email_verification.text.toString().trim());
 //                          auth.sendPasswordResetEmail(email: _email_verification.text.toString().trim())
 //                              .then((value) {
@@ -136,11 +133,8 @@ class ForgotPassword extends StatelessWidget {
 //                            print('Catch ERROR::: $error');
 //                          });
 
-                        }
-                    ),
-                  ),
-
-                ],
+                    }
+                ),
               ),
             ],
 
