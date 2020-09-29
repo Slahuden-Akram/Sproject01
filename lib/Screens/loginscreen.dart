@@ -260,6 +260,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+//
 
 _signInWithEmail(String email, String password){
   return "User Logged in";

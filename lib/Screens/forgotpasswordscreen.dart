@@ -93,6 +93,7 @@ class ForgotPassword extends StatelessWidget {
                         color: Colors.black,
                       ),
                       hintText: 'Enter your email',
+                      //
                       hintStyle: TextStyle(fontSize: 18.0)),
                   style:
                   TextStyle(fontWeight: FontWeight.w400, fontSize: 18),
