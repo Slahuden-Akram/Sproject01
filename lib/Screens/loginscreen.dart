@@ -2,6 +2,7 @@ import 'package:Sproject01/Screens/createaccountscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'forgotpasswordscreen.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 TextEditingController _password_cntrlr = TextEditingController();
 TextEditingController _email_cntrlr = TextEditingController();
@@ -203,6 +204,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           },
                         ),
                       ),
+                    ),
+                    SignInButton(
+                      Buttons.GoogleDark,
+                      text: "Sign in with Google",
+                      padding: EdgeInsets.only(top: 0,bottom: 0,),
+                      onPressed: () {},
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 50.0),
