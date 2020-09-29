@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class NewLogin extends StatefulWidget {
+class CreateAccount extends StatefulWidget {
   @override
-  _NewLoginState createState() => _NewLoginState();
+  _CreateAccountState createState() => _CreateAccountState();
 }
 
-class _NewLoginState extends State<NewLogin> {
+class _CreateAccountState extends State<CreateAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -140,7 +140,7 @@ class _NewLoginState extends State<NewLogin> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Text("Create"),
+                  child: Text("Create Account"),
                   //is it login page or create account?
                 ),
               )

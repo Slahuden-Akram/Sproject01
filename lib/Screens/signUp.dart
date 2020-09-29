@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/cupertino.dart';
-import 'login.dart';
+import 'createAccount.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -138,8 +138,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: 270,
                 child: RaisedButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => NewLogin()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CreateAccount()));
                   },
                   color: Colors.white,
                   padding: const EdgeInsets.all(14),
