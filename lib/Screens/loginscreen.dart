@@ -1,3 +1,4 @@
+import 'package:Sproject01/Firebase/authentication.dart';
 import 'package:Sproject01/Screens/createaccountscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -270,7 +271,9 @@ class _LoginScreenState extends State<LoginScreen> {
 }
 //
 
-_signInWithEmail(String email, String password){
+Future<String>_signInWithEmail(String email, String password) async{
+  print("local sign in method \n $email \n $password");
+ await signInWithEmailAndPassword(email, password);
   return "User Logged in";
   //todo: code for signing in here
 }
