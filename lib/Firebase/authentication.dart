@@ -1,5 +1,3 @@
-
-
 import 'package:Sproject01/globals.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
