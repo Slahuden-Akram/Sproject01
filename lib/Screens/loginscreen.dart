@@ -1,5 +1,6 @@
 import 'package:Sproject01/Firebase/authentication.dart';
 import 'package:Sproject01/Screens/createaccountscreen.dart';
+import 'package:Sproject01/Screens/firstscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'forgotpasswordscreen.dart';
@@ -179,7 +180,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                     Navigator.pop(context);
                                     Navigator.push(context, MaterialPageRoute(
                                         builder: (context){
-                                         // todo: return next screen here e.g return FirstScreen();
+                                          return FirstScreen();
+
                                         }
                                     )
                                     );
