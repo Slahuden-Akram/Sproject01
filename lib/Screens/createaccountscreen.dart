@@ -15,6 +15,5 @@ class _CreateAccountState extends State<CreateAccount> {
           //todo: code from here
         )),
     );
-    //
   }
 }
