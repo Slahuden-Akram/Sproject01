@@ -209,12 +209,12 @@ class _CreateAccountState extends State<CreateAccount> {
                   //On Pressed
                   onPressed: ()
                   {
-                    if(_password_cntrlr.text.trim()==""|| _email_cntrlr.text.trim()=="")
+                    if(_password_cntrlr.text.trim()==""|| _email_cntrlr.text.trim()==""||_confirm_password_cntrlr.text.trim()==""||_phone_cntrlr.text.trim()=="")
                     {
 
                       setState(() {
-                        _error_text= "Fill both fields";
-                        Scaffold.of(scaffold_context).showSnackBar(SnackBar(content: Text("Fill both fields\n ",style: TextStyle(
+                        _error_text= "Fill All fields";
+                        Scaffold.of(scaffold_context).showSnackBar(SnackBar(content: Text("Fill All fields\n ",style: TextStyle(
                             fontSize: 20
                         ),),
                           duration: Duration(milliseconds: 3200),
@@ -252,6 +252,8 @@ class _CreateAccountState extends State<CreateAccount> {
                         {
                           _email_cntrlr.clear();
                           _password_cntrlr.clear();
+                          _phone_cntrlr.clear();
+                          _confirm_password_cntrlr.clear();
                           Navigator.pop(context);
                           Navigator.pop(context);
                           Navigator.push(context, MaterialPageRoute(
