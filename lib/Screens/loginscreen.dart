@@ -43,7 +43,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     Padding(
                       padding:
                       const EdgeInsets.only(left: 20, right: 20, bottom: 10),
-                      child: Container(
+                      child:
+                      Container(
                         height: 50,
                         child:
                         TextFormField(
@@ -222,7 +223,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             borderRadius: BorderRadius.circular(30)),
                         onPressed: () {
                           Navigator.push(context,
-                              MaterialPageRoute(builder: (context)=>MyHomePage()));
+                              MaterialPageRoute(builder: (context)=>CreateAccount()));
                         },
                         color:Colors.transparent,
                         child: Text(
