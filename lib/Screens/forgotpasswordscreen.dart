@@ -100,7 +100,7 @@ class ForgotPassword extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 20,
               ),
               ButtonTheme(
                 minWidth: MediaQuery.of(context).size.width,
@@ -123,7 +123,7 @@ class ForgotPassword extends StatelessWidget {
                     ),
                     //On Pressed
                     onPressed: () {
-                      //todo: auth to be created as global veriable
+
 //                          print(_email_verification.text.toString().trim());
 //                          auth.sendPasswordResetEmail(email: _email_verification.text.toString().trim())
 //                              .then((value) {
